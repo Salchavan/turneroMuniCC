@@ -1,16 +1,13 @@
+import { AdvertisementComp } from "./components/AdvertisementComp"
+import { SimpleComp } from "./simple-view/SimpleComp.tsx"
+import { useStore } from "./Store.ts"
 
-
-function App() {
-
+export const App = () => {
+  const turnerMode = useStore((state) => state.turnerMode)
 
   return (
-    <>
-      
-      <p className="read-the-docs">
-        holaaaaa
-      </p>
-    </>
+    <div className="h-screen w-screen">
+      {turnerMode === 'simple' ? <SimpleComp /> : <AdvertisementComp />}
+    </div>
   )
 }
-
-export default App
