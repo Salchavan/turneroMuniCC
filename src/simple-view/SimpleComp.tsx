@@ -1,6 +1,6 @@
 import {Header} from '../components/Header';
 import {NextTurnList} from '../components/NextTurnList'
-import { CurrentTurn } from '../components/CurrtetTurn';
+import { CurrentTurn } from '../components/CurrentTurn';
 
 export const SimpleComp = () => {
   return (
